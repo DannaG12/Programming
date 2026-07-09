@@ -4,7 +4,7 @@ import plotly.express as px
 
 app = Dash()
 
-df = pd.read_csv('combined_output.csv')
+df = pd.read_csv('data/combined_output.csv')
 
 
 app.layout = html.Div([
@@ -36,5 +36,5 @@ def update_line_chart(regions):
     )
     return fig
 
-
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
