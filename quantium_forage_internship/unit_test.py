@@ -1,4 +1,4 @@
-from app import app, update_line_chart
+from quantium_forage_internship.app import app, update_line_chart
 
 def test_title():
     assert app.layout.children[0].children == "Pink Morsels Sales Dashboard"    
